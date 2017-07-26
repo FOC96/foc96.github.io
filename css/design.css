@@ -6,16 +6,6 @@
     font-family: 'Muli'
 }
 
-@font-face {
-    font-family: "Muli-ExtraBold";
-    src: url('/font/Muli-ExtraBold') format('truetype');
-}
-
-@font-face {
-    font-family: "Muli-Regular";
-    src: url('/font/Muli-Regular') format('truetype');
-}
-
 #info {
     position: fixed;
     top: 0;
@@ -68,7 +58,6 @@
 }
 
 h1 {
-    font-family: Muli-ExtraBold;
     font-weight: 800;
     font-size: 38px;
     color: #FFFFFF;
@@ -82,7 +71,6 @@ h1 {
 }
 
 h2 {
-    font-family: Muli-Regular;
     font-family: 400;
     font-size: 20px;
     color: #FFFFFF;
