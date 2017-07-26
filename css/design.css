@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,800');
+
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Muli'
 }
 
 @font-face {
@@ -66,6 +69,7 @@
 
 h1 {
     font-family: Muli-ExtraBold;
+    font-weight: 800;
     font-size: 38px;
     color: #FFFFFF;
     letter-spacing: 1px;
@@ -79,6 +83,7 @@ h1 {
 
 h2 {
     font-family: Muli-Regular;
+    font-family: 400;
     font-size: 20px;
     color: #FFFFFF;
     letter-spacing: 1px;
