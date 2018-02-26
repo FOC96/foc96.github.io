@@ -152,31 +152,31 @@ h2 {
 }
 
 #marketScanCard {
-	background: url(../media/cards/marketScan.jpeg) no-repeat;
+	background: url(../media/cards/marketScan.jpg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
 
 #snapChatCloneCard {
-	background: url(../media/cards/snapChatClone.jpeg) no-repeat;
+	background: url(../media/cards/snapChatClone.jpg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
 
 #saludUAQCard {
-	background: url(../media/cards/saludUAQ.jpeg) no-repeat;
+	background: url(../media/cards/saludUAQ.jpg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
 
 #agendAppCard {
-	background: url(../media/cards/agendApp.jpeg) no-repeat;
+	background: url(../media/cards/agendApp.jpg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
 
 #CSSelioCard {
-	background: url(../media/cards/csselio.jpeg) no-repeat;
+	background: url(../media/cards/csselio.jpg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
@@ -187,7 +187,9 @@ h2 {
 	text-align: center;
 }
 
-
+#mainContent {
+	margin-bottom: 40px;
+}
 
 
 
