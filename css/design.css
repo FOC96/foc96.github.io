@@ -152,13 +152,13 @@ h2 {
 }
 
 #marketScanCard {
-	background: url(../media/cards/MarketScan.jpeg) no-repeat;
+	background: url(../media/cards/marketScan.jpeg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
 
 #snapChatCloneCard {
-	background: url(../media/cards/SnapchatClone.jpeg) no-repeat;
+	background: url(../media/cards/snapChatClone.jpeg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
@@ -170,7 +170,7 @@ h2 {
 }
 
 #agendAppCard {
-	background: url(../media/cards/AgendApp.jpeg) no-repeat;
+	background: url(../media/cards/agendApp.jpeg) no-repeat;
 	background-position: top center;
 	background-size: cover;
 }
