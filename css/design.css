@@ -8,16 +8,26 @@
 
 body {
 	background: #F1F4F4;
+	height: 100%;
+	width: 100%;
+}
+
+#mainContent {
+	position: absolute;
+	min-height: 100%;
 }
 
 .fullScreen {
 	width: 100%;
-	min-height: 300px;
-	height: 100%;
+	min-height: 100% !important;
 	float: left;
 }
 
-.:nth-child(2) {
+.fullScreen:nth-child(1) {
+	height: 700px;
+}
+
+.fullScreen:nth-child(2) {
 	margin-top: -80px;
 }
 
@@ -181,6 +191,24 @@ h2 {
 	background-size: cover;
 }
 
+#portScannerCard {
+	background: url(../media/cards/portScanner.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+#sacCSCard {
+	background: url(../media/cards/sac18cs.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+#sacCard {
+	background: url(../media/cards/sac18.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
 .cardInfoB h2, .cardInfoB p {
 	color: #202020 !important;
 	box-shadow: none;
@@ -231,5 +259,9 @@ h2 {
 			margin: auto ;
 			box-sizing: border-box;
 			overflow-x: hidden;
+	}
+
+	.fullScreen:nth-child(1) {
+		height: 600px;
 	}
 }
