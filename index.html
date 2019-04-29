@@ -4,8 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <link href="css/design.css" rel="stylesheet" type="text/css">
+    <script src="js/projects.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body onload="loadProjects()">
+    <div class="blackBack">
+      <div id="detailView">
+
+      </div>
+    </div>
+
+
 		<div id="mainContent">
 			<div class="fullScreen flexCenterMiddle">
 				<div id="info" class="flexCenterMiddleColumns">
@@ -21,71 +29,15 @@
 				</div>
 			</div>
 
-			<div class="fullScreen flexFormSpace">
+			<div class="fullScreen flexFormSpace" id="projectsSpace">
 
-				<div class="card verticalCard flexThree" onclick="location.assign('https://portalinformatica.uaq.mx/sac/')" id="sacCard">
-					<div class="cardInfo">
-						<h2>SAC18</h2>
-						<p>Project</p>
-					</div>
-				</div>
 
-				<div class="card verticalCard flexThree" onclick="location.assign('https://medium.com/@FOC96/sac18-489cb55d7e77')" id="sacCSCard">
-					<div class="cardInfoB">
-						<h2>SAC18</h2>
-						<p>UX Case Study</p>
-					</div>
-				</div>
-
-				<div class="card verticalCard flexThree" onclick="location.assign('https://github.com/FOC96/PortScanner')" id="portScannerCard">
-					<div class="cardInfoB">
-						<h2>PortScanner</h2>
-						<p>iOS Project</p>
-					</div>
-				</div>
-
-				<div class="card verticalCard flexThree" onclick="location.assign('https://sketch.cloud/s/4o9WZ')" id="CSSelioCard">
-					<div class="cardInfoB">
-						<h2>CSSelio</h2>
-						<p>CSS Framework</p>
-					</div>
-				</div>
-
-				<div class="card verticalCard flexThree" id="marketScanCard" onclick="location.assign('https://sketch.cloud/s/bL07o')">
-					<div class="cardInfo">
-						<h2>MarketScan</h2>
-						<p>On-going Project</p>
-					</div>
-				</div>
-
-				<div class="card verticalCard flexThree" onclick="location.assign('https://sketch.cloud/s/Kvq1n')" id="saludUAQCard">
-					<div class="cardInfoB">
-						<h2>Salud UAQ</h2>
-						<p>UI/UX</p>
-					</div>
-				</div>
-
-				<div class="card verticalCard flexThree" onclick="location.assign('https://github.com/FOC96/SnapchatClone')" id="snapChatCloneCard">
-					<div class="cardInfoB">
-						<h2>SnapchatClone</h2>
-						<p>Python Project</p>
-					</div>
-				</div>
-
-				<div class="card verticalCard flexThree" onclick="location.assign('https://github.com/FOC96/AgendApp')" id="agendAppCard">
-					<div class="cardInfo">
-						<h2>AgendApp</h2>
-						<p>Project</p>
-					</div>
-				</div>
 
 
 			</div>
 
 
 		</div>
-
-
   </body>
 </html>
 
@@ -99,10 +51,4 @@
 
   ga('create', 'UA-103221273-1', 'auto');
   ga('send', 'pageview');
-
-
-	function notReady() {
-		alert("Sorry! Work has yet to be published.");
-	}
-
 </script>

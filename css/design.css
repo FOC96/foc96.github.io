@@ -80,7 +80,7 @@ h1 {
 
 h2 {
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 22px;
 	color: #202020;
 	letter-spacing: 1.6px;
 }
@@ -90,18 +90,19 @@ h2 {
 }
 
 .card {
-	min-height: 150px;
+	min-height: 100px;
 	background: white;
-	border-radius: 4px;
-	box-shadow: 0px 2px 15px 0px rgba(0,0,0,.08);
+	border-radius: 12px;
+	box-shadow: 0px 4px 15px 0px rgba(0,0,0,.12);
 	margin-bottom: 30px;
 	cursor: pointer;
 	transition: .2s;
 	overflow: hidden;
+  background-position: top center !important;
+  background-size: cover !important;
 }
 
 .verticalCard {
-	min-height: 400px !important;
 	max-height: 450px;
 	display: flex;
 	flex-flow: column nowrap;
@@ -135,8 +136,7 @@ h2 {
 .card p {
 	font-weight: 400;
 	font-size: 16px;
-	letter-spacing: 3px;
-	text-align: center;
+	text-align: left;
 }
 
 .card img {
@@ -145,95 +145,76 @@ h2 {
 }
 
 .cardInfo, .cardInfoB {
-	width: calc(100% - 40px);
-	margin: auto;
-	margin-bottom: 40px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 15px;
+  background: white;
+  box-sizing: border-box;
 }
 
 .cardInfo p {
-	color: #FFFFFF;
-	text-shadow: 0 0 6px rgba(0,0,0,0.80);
+	color: rgb(180,180,180);
+  text-transform: uppercase;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 3px;
 }
 
 .cardInfo h2 {
-	color: #FFFFFF !important;
-	text-shadow: 0 0 4px rgba(0,0,0,0.50);
-	text-align: center;
-}
-
-#marketScanCard {
-	background: url(../media/cards/marketScan.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#snapChatCloneCard {
-	background: url(../media/cards/snapChatClone.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#saludUAQCard {
-	background: url(../media/cards/saludUAQ.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#agendAppCard {
-	background: url(../media/cards/agendApp.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#CSSelioCard {
-	background: url(../media/cards/csselio.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#portScannerCard {
-	background: url(../media/cards/portScanner.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#sacCSCard {
-	background: url(../media/cards/sac18cs.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
-}
-
-#sacCard {
-	background: url(../media/cards/sac18.jpg) no-repeat;
-	background-position: top center;
-	background-size: cover;
+	color: rgb(50,50,50);
+	text-align: left;
+  letter-spacing: 1px;
 }
 
 .cardInfoB h2, .cardInfoB p {
 	color: #202020 !important;
 	box-shadow: none;
-	text-align: center;
+	text-align: left;
 }
 
 #mainContent {
 	margin-bottom: 40px;
 }
 
+.blackBack {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.2);
+  position: fixed;
+  z-index: 8;
+}
+
+#detailView {
+  background: white;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  z-index: 9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,.12);
+}
 
 
 @media only screen and (min-width: 1024px) {
 	#mainContent {
-		width: 80%;
-		margin-left: 10%;
+		width: 90%;
+		margin-left: 5%;
 		box-sizing: border-box;
 		padding-left: 10px;
 		padding-right: 10px;
 		overflow: auto;
 	}
 
+  .verticalCard {
+    min-height: 300px;
+  }
+
 	.card:hover {
 		transform: scale(1.01);
-		box-shadow: 0px 2px 6px 0px rgba(0,0,0,.08);
+		box-shadow: 0px 2px 8px 0px rgba(0,0,0,.08);
 	}
 }
 
@@ -245,6 +226,10 @@ h2 {
 		padding-right: 10px;
 		overflow: auto;
 	}
+
+  .verticalCard {
+    min-height: 300px;
+  }
 
 	.card:hover {
 		transform: scale(1.01);
@@ -264,4 +249,33 @@ h2 {
 	.fullScreen:nth-child(1) {
 		height: 600px;
 	}
+
+  .verticalCard {
+    min-height: 80px;
+    max-width: 350px;
+    background-size: 150px !important;
+    background-position: -35px -1px !important;
+  }
+
+  .cardInfo {
+    height: 80px;
+    width: calc(100% - 80px);
+    margin: auto;
+    margin-right: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .cardInfo h2 {
+    font-size: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .cardInfo p {
+    font-size: 9px;
+  }
 }
