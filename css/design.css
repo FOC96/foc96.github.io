@@ -189,14 +189,132 @@ h2 {
 
 #detailView {
   background: white;
-  height: 80%;
+  height: auto;
+  max-height: 450px;
   width: 80%;
-  position: absolute;
+  position: fixed;
   z-index: 9;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.15);
   border-radius: 12px;
-  box-shadow: 0px 4px 10px 0px rgba(0,0,0,.12);
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
 }
 
+.unscrollable {
+  overflow: hidden;
+}
+
+.imageLeft {
+  height: calc(100% + 50px);
+  min-width: 180px;
+  float: left;
+  background: lightGray;
+  margin-right: 25px;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-radius: 12px 0 0 12px;
+  background-position: center top !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  margin: auto;
+  border: none;
+  background: transparent;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.closeBtn img {
+  height: 20px;
+}
+
+.projectDetails {
+  float: left;
+}
+
+.projDetail {
+  font-size: 16px;
+  color: #202020;
+  letter-spacing: 0.8px;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.projectDetails a {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.9px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.projectHead {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.projectHead h2 {
+  width: 100%;
+  user-select: none;
+}
+
+.projectHead p {
+  float: left;
+  margin-right: 10px;
+  font-size: 11px;
+  color: #A2A2A2;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.tagSpace {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+}
+
+.tag {
+  background: rgba(0,0,0,0.05);
+  border-radius: 10px;
+  float: left;
+  font-size: 11px;
+  color: #A2A2A2;
+  padding: 2px 6px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+.sketchBtn {
+  background: #EA6C00;
+}
+
+.githubBtn {
+  background: #24292E;
+}
+
+.previewBtn {
+  background: #007DD4;
+}
 
 @media only screen and (min-width: 1024px) {
 	#mainContent {
@@ -216,11 +334,21 @@ h2 {
 		transform: scale(1.01);
 		box-shadow: 0px 2px 8px 0px rgba(0,0,0,.08);
 	}
+
+  #detailView {
+    width: 500px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 1124px) {
 	#mainContent {
 		width: 100%;
+    margin: 0;
 		box-sizing: border-box;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -235,6 +363,15 @@ h2 {
 		transform: scale(1.01);
 		box-shadow: 0px 2px 6px 0px rgba(0,0,0,.08);
 	}
+
+  #detailView {
+    width: 595px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -277,5 +414,19 @@ h2 {
 
   .cardInfo p {
     font-size: 9px;
+  }
+
+  .imageLeft {
+    display: none;
+  }
+
+  #detailView {
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 12px 0 rgba(0,0,0,0.15);
+    overflow: auto;
+    max-height: 500px;
   }
 }

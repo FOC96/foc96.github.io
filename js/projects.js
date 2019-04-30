@@ -87,7 +87,7 @@ var Projects = {
     },
     "Snapchat Clone": {
       "type": "Desktop App",
-      "description": "Desktop app developed with Python 3 which intends to recreate Snapchat’s main features.",
+      "description": "Desktop app developed with Python 3 which intends to recreate Snapchat’s main features: send and receive pictures with simple filters.",
       "image": "media/cards/snapChatClone.jpg",
       "tags": ["Python 3", "Kivy", "University Project"],
       "links": {
@@ -161,5 +161,61 @@ function getProjectYear(proj) {
 }
 
 function details(proj) {
-  console.log(getProjectName(proj));
+  tags = getProjectTags(proj)
+
+  tagConts = ""
+
+  for (var i = 0; i < tags.length; i++) {
+    tagConts += '<div class="tag">'+tags[i]+'</div>'
+  }
+
+  links = getProjectLinks(proj)
+
+  linkStr = ""
+
+  if (links.hasOwnProperty('Sketch')) {
+    linkStr += '<a class="sketchBtn" href="'+links.Sketch+'" target="_blank">Prototype</a>'
+  }
+  if (links.hasOwnProperty('Website')) {
+    linkStr += '<a class="previewBtn" href="'+links.Website+'" target="_blank">Preview</a>'
+  }
+  if (links.hasOwnProperty('GitHub')) {
+    linkStr += '<a class="githubBtn" href="'+links.GitHub+'" target="_blank">Repository</a>'
+  }
+
+  console.log(linkStr);
+
+  popUp = '<div class="blackBack" onClick="hideDetails()">'+
+            '</div>'+
+          '<div id="detailView">'+
+          '<button class="closeBtn" name="button" onclick="hideDetails()"><img src="media/close.svg" alt=""></button>'+
+            '<div class="imageLeft" style="background:url('+getProjectImage(proj)+')">'+
+            '</div>'+
+            '<div class="projectDetails">'+
+              '<div class="projectHead">'+
+                '<h2>'+getProjectName(proj)+'</h2>'+
+                  '<p>'+getProjectYear(proj)+'</p>'+
+                  '<p>'+getProjectType(proj)+'</p>'+
+                '<div class="tagSpace">'+
+                tagConts+
+                '</div>'+
+              '</div>'+
+              '<p class="projDetail">'+getProjectDescription(proj)+'</p>'+
+              linkStr+
+            '</div>'+
+          '</div>'
+
+
+  mainContent = document.getElementById('mainContent')
+
+  mainContent.insertAdjacentHTML('beforebegin', popUp)
+
+  document.querySelector('body').classList.add('unscrollable');
+
+}
+
+function hideDetails() {
+  document.querySelector('#detailView').remove()
+  document.querySelector('.blackBack').remove()
+  document.querySelector('body').classList.remove('unscrollable');
 }
