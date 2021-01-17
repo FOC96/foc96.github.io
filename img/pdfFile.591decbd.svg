@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="72px" viewBox="0 0 58 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <path d="M33.488,0 L45,8.12 L45,56.0008204 C45,58.2099594 43.209139,60.0008204 41,60.0008204 L4,60.0008204 C1.790861,60.0008204 2.705415e-16,58.2099594 0,56.0008204 L0,4.0008204 C-2.705415e-16,1.7916814 1.790861,0.000820396766 4,0.000820396766 L33.488,0 Z" id="path-1"></path>
+        <filter x="-22.2%" y="-13.3%" width="144.4%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.151302311 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-75.0%" y="-75.7%" width="250.0%" height="285.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="26" height="13" rx="2"></rect>
+        <filter x="-13.5%" y="-19.2%" width="126.9%" height="153.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04866508 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="v3.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-5" transform="translate(-183.000000, -1463.000000)">
+            <g id="Group-3" transform="translate(174.000000, 1452.000000)">
+                <g id="Group-2" transform="translate(15.000000, 14.999180)">
+                    <g id="Triangle-+-Triangle-Copy-Mask">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M39.0740942,9.40982174 L41.4804168,13.0421557 L41.4804168,13.0421557 L29.4804168,13.0421557 L32.6151834,9.12114382 C33.9946733,7.39565762 36.5117538,7.11517222 38.23724,8.49466216 C38.5620697,8.75435669 38.8444134,9.06311962 39.0740942,9.40982174 Z" id="Triangle" fill-opacity="0.097529" fill="#000000" filter="url(#filter-4)" mask="url(#mask-2)" transform="translate(35.480417, 8.938053) rotate(-145.000000) translate(-35.480417, -8.938053) "></path>
+                        <path d="M40.1678087,7.72580467 L43.4804168,12.7261728 L43.4804168,12.7261728 L29.4804168,12.7261728 L33.7088979,7.43712676 C35.0883878,5.71164055 37.6054683,5.43115516 39.3309545,6.81064509 C39.6557842,7.07033962 39.9381279,7.37910255 40.1678087,7.72580467 Z" id="Triangle-Copy" fill="#DADADA" mask="url(#mask-2)" transform="translate(36.480417, 7.938053) rotate(-145.000000) translate(-36.480417, -7.938053) "></path>
+                    </g>
+                    <g id="Group" transform="translate(24.000000, 40.000820)">
+                        <g id="Rectangle-Copy-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use fill="#F00000" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                        <path d="M6.24,10 L6.24,7.79 L7.05,7.79 C8.43,7.79 9.6,7.11 9.6,5.58 C9.6,4 8.44,3.48 7.01,3.48 L4.77,3.48 L4.77,10 L6.24,10 Z M6.96,6.62 L6.24,6.62 L6.24,4.65 L6.92,4.65 C7.72,4.65 8.16,4.9 8.16,5.58 C8.16,6.26 7.77,6.62 6.96,6.62 Z M12.7839286,10 C14.6939286,10 15.9739286,8.95 15.9739286,6.71 C15.9739286,4.47 14.6939286,3.48 12.7039286,3.48 L10.8639286,3.48 L10.8639286,10 L12.7839286,10 Z M12.6139286,8.81 L12.3339286,8.81 L12.3339286,4.67 L12.6139286,4.67 C13.7239286,4.67 14.4639286,5.15 14.4639286,6.71 C14.4639286,8.27 13.7239286,8.81 12.6139286,8.81 Z M18.8178572,10 L18.8178572,7.47 L21.0778572,7.47 L21.0778572,6.23 L18.8178572,6.23 L18.8178572,4.72 L21.4578572,4.72 L21.4578572,3.48 L17.3478572,3.48 L17.3478572,10 L18.8178572,10 Z" id="PDF" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
